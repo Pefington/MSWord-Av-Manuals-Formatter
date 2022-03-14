@@ -14,11 +14,29 @@ After this fell through, I realised I liked coding and decided to pursue full st
 
 ---
 
-## This program:
+### This program:
 
 - Prompts the user to open a document to process, and an up to date .docx template for styles. The program document also has embedded templates (i.e. cover and preamble pages);
 - [Prompts entry on a cover page mock-up](Screenshots/Cover.png) for later use - title, subtitle, date, version, authority, etc. - with data validation and sanitization;
 - [Prompts user for an example of a table header](Screenshots/Headers.png), if present, for later recognition;
-- Clears all bookmarks;
-- Clears all section breaks, manual lne breaks, column breaks, and manual page breaks (except when a document orientation change is detected - portrait => landscape and vice versa);
--
+
+[Then starts working by](Screenshots/Progress.png):
+
+- Clearing all bookmarks;
+- Clearing all section breaks, manual line breaks, column breaks, and manual page breaks (except when a document orientation change is detected - portrait => landscape and vice versa);
+- Cleaning and formating floating shapes;
+- Removing all bad ("fake") headers;
+- Removing all headers and footers;
+- Setting up the layout parameters for the document;
+- Detecting and removing table(s) of content;
+- Doing a fast pass of sanitization (double characters, new lines, etc.);
+- Going through every paragraph, and, using regular expressions and pattern recognition, rewrites every paragraph, with correct styling, numbering, sectioning, etc.
+This is the meat of the program;
+- Removing manual (bad) tables of content;
+- Formatting every table;
+- Generating cover pages using earlier input;
+- Generating proper header and footers using same prevous inputs;
+- Generating a Table of Contents;
+- Finally, generating a List of Effective Pages recursively.
+
+A dev. mode is available, and will show the user what's happening in real time (at the expense of execution speed).
