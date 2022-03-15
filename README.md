@@ -3,7 +3,7 @@
 This VBA program was made while working to obtain an Air Operator Certificate for a startup airline.
 The funding was unsuccessful.
 
-After this fell through, I realised I liked coding and decided to pursue full stack engineering.
+After this fell through, I realized I liked coding and decided to pursue full stack engineering.
 
 ---
 
@@ -24,7 +24,7 @@ After this fell through, I realised I liked coding and decided to pursue full st
 
 - Clearing all bookmarks;
 - Clearing all section breaks, manual line breaks, column breaks, and manual page breaks (except when a document orientation change is detected - portrait => landscape and vice versa);
-- Cleaning and formating floating shapes;
+- Cleaning and formatting floating shapes;
 - Removing all bad ("fake") headers;
 - Removing all headers and footers;
 - Setting up the layout parameters for the document;
@@ -35,7 +35,7 @@ This is the meat of the program;
 - Removing manual (bad) tables of content;
 - Formatting every table;
 - Generating cover pages using earlier input;
-- Generating proper header and footers using same prevous inputs;
+- Generating proper header and footers using same previous inputs;
 - Generating a Table of Contents;
 - Finally, generating a List of Effective Pages recursively.
 
